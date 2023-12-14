@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+mkdir -p /root/traffic
 wget -O /root/traffic/get_traffic.py https://raw.githubusercontent.com/0x01E/abc/main/get_traffic.py
 
 if [ $? -ne 0 ]; then
