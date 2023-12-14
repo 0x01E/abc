@@ -8,6 +8,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+apt install -y python3 python3-pip
 python_version=$(python3 -c "import sys; print('.'.join(map(str, sys.version_info[:3])))")
 echo "Detected Python version: $python_version"
 
