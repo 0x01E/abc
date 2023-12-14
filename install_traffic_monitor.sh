@@ -13,9 +13,9 @@ python_version=$(python3 -c "import sys; print('.'.join(map(str, sys.version_inf
 echo "Detected Python version: $python_version"
 
 if [[ "$python_version" > "3.9.6" ]]; then
-    python3 -m pip install schedule requests time subprocess --break-system-packages
+    python3 -m pip install schedule requests --break-system-packages
 else
-    python3 -m pip install schedule requests time subprocess
+    python3 -m pip install schedule requests
     
 fi
 
